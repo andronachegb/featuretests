@@ -64,7 +64,7 @@
 			<name>T1</name>
 			<description></description>
 			<isTemplate>true</isTemplate>
-			<driverId>111a04a2-f4ab-49d4-b313-e061017170c5</driverId>
+			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
 			<type>DEVICE</type>
 			<interfaceType>ORCHESTRATION</interfaceType>
 			<utilizationType>SHARED</utilizationType>
@@ -86,7 +86,7 @@
 			<description></description>
 			<isTemplate>true</isTemplate>
 			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
-			<l2SwitchId>136d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
+			<l2SwitchId>236d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
 			<type>DEVICE</type>
 			<interfaceType>ORCHESTRATION</interfaceType>
 			<utilizationType>SHARED</utilizationType>
