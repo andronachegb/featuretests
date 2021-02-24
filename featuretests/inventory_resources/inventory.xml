@@ -2,9 +2,436 @@
 <inventory format-version="1.0">
 	<templates>
 		<template>
-			<id>fea52e8b-8d75-455e-baa5-80751d9625c7</id>
-			<revisionId>fea52e8b-8d75-455e-baa5-80751d9625c7</revisionId>
-			<name>PC</name>
+			<id>a5266606-f35b-482b-8c3f-a4317c1ccbb9</id>
+			<revisionId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</revisionId>
+			<name>Network Port</name>
+			<description></description>
+			<isTemplate>true</isTemplate>
+			<type>PORT</type>
+			<interfaceType>NONE</interfaceType>
+			<utilizationType>EXCLUSIVE</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>portNumber</name>
+					<description>System port number. Example: 1.1.1</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>true</required>
+					<group>f2844d19-6224-4e06-a5fd-f156ae7e3d36</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Port Type</name>
+					<description>Example: Ethernet, Fast Ethernet, Copper..., etc</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>Ethernet</value>
+					<required>false</required>
+					<group>f2844d19-6224-4e06-a5fd-f156ae7e3d36</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Port Speed</name>
+					<description>Unit of Measure:  Mbps</description>
+					<datatype>INTEGER</datatype>
+					<widgetType>INTEGER_FIELD</widgetType>
+					<value>1000</value>
+					<required>false</required>
+					<group>f2844d19-6224-4e06-a5fd-f156ae7e3d36</group>
+					<seqNo>4</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>f2844d19-6224-4e06-a5fd-f156ae7e3d36</id>
+					<name>System Identification</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon/>
+			<defaultImageAttach/>
+			<defaultConfigAttach/>
+		</template>
+		<template>
+			<id>9018ad33-9a04-4ecb-82da-446f227f97c3</id>
+			<revisionId>9018ad33-9a04-4ecb-82da-446f227f97c3</revisionId>
+			<name>T1</name>
+			<description>Desc1</description>
+			<isTemplate>true</isTemplate>
+			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
+			<l2SwitchId>136d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
+			<type>DEVICE</type>
+			<interfaceType>ORCHESTRATION</interfaceType>
+			<utilizationType>SHARED</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>ptop1</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>123</value>
+					<required>false</required>
+					<group>f4623220-50b6-4d4c-9a30-e176ae8f2b88</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>ptop2</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>abc</value>
+					<required>false</required>
+					<group>f4623220-50b6-4d4c-9a30-e176ae8f2b88</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>f4623220-50b6-4d4c-9a30-e176ae8f2b88</id>
+					<name>PG1</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon>
+				<attachment>
+					<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+					<name>920x920.jpg</name>
+					<contentType>image/jpeg</contentType>
+				</attachment>
+			</icon>
+			<defaultImageAttach>
+				<attachment>
+					<id>75857e83-c6b6-49a3-897a-75e5d11e84a0</id>
+					<name>config (5).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultImageAttach>
+			<defaultConfigAttach>
+				<attachment>
+					<id>02b740e4-e48d-4e10-b33d-cac73fb69b13</id>
+					<name>config (3).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultConfigAttach>
+			<tags>
+				<tag>tag1</tag>
+			</tags>
+			<sessions>
+				<session>
+					<id>00c8a9d9-5198-4a1d-b8bf-03a13e5808cf</id>
+					<sessionId>9bc7e292-a67c-47a2-93d2-eede45f6d2fb</sessionId>
+					<name>SSH</name>
+					<language>Python</language>
+					<baseProfile>application://com.fnfr.svt.applications.ssh</baseProfile>
+					<baseApplication>com.fnfr.svt.applications.ssh</baseApplication>
+					<isDisabled>false</isDisabled>
+					<resourceId>9018ad33-9a04-4ecb-82da-446f227f97c3</resourceId>
+					<properties>
+						<property>
+							<id>43c90507-39e4-4654-bce0-048b28dd2ac2</id>
+							<name>user</name>
+							<value>root</value>
+						</property>
+						<property>
+							<id>b417bb82-6a50-4e78-b635-b7cf8af2f5e8</id>
+							<name>type</name>
+							<value>com.fnfr.svt.applications.ssh.documents.SSHProperties</value>
+						</property>
+						<property>
+							<id>f94f441d-9e3f-4e4c-8a96-d07f76e72cf0</id>
+							<name>ipAddress</name>
+							<value>127.0.0.1</value>
+						</property>
+						<property>
+							<id>2c627490-98d8-46cc-b863-5d318ae6e3f0</id>
+							<name>password</name>
+							<value>iRyLc4KQj80=</value>
+						</property>
+					</properties>
+				</session>
+			</sessions>
+			<nestedTemplates>
+				<nestedTemplate>
+					<id>7c7197dc-8cff-4267-b97e-62fda6d9330c</id>
+				</nestedTemplate>
+			</nestedTemplates>
+		</template>
+		<template>
+			<id>7c7197dc-8cff-4267-b97e-62fda6d9330c</id>
+			<revisionId>7c7197dc-8cff-4267-b97e-62fda6d9330c</revisionId>
+			<name>T2</name>
+			<description>Desc2</description>
+			<isTemplate>true</isTemplate>
+			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
+			<l2SwitchId>136d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
+			<type>DEVICE</type>
+			<interfaceType>ORCHESTRATION</interfaceType>
+			<utilizationType>SHARED</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>ptop1</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>123</value>
+					<required>false</required>
+					<group>72770bc6-19a4-4fe1-9354-573825f9421b</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>ptop2</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>abc</value>
+					<required>false</required>
+					<group>72770bc6-19a4-4fe1-9354-573825f9421b</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>72770bc6-19a4-4fe1-9354-573825f9421b</id>
+					<name>PG1</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon>
+				<attachment>
+					<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+					<name>920x920.jpg</name>
+					<contentType>image/jpeg</contentType>
+				</attachment>
+			</icon>
+			<defaultImageAttach>
+				<attachment>
+					<id>75857e83-c6b6-49a3-897a-75e5d11e84a0</id>
+					<name>config (5).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultImageAttach>
+			<defaultConfigAttach>
+				<attachment>
+					<id>02b740e4-e48d-4e10-b33d-cac73fb69b13</id>
+					<name>config (3).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultConfigAttach>
+			<tags>
+				<tag>tag2</tag>
+			</tags>
+			<nestedTemplates>
+				<nestedTemplate>
+					<id>6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</id>
+				</nestedTemplate>
+			</nestedTemplates>
+		</template>
+		<template>
+			<id>6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</id>
+			<revisionId>6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</revisionId>
+			<name>T3</name>
+			<description>Desc3</description>
+			<isTemplate>true</isTemplate>
+			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
+			<l2SwitchId>136d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
+			<type>DEVICE</type>
+			<interfaceType>ORCHESTRATION</interfaceType>
+			<utilizationType>SHARED</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>ptop1</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>123</value>
+					<required>false</required>
+					<group>31f92968-c9d1-43f6-a49b-21284fa41deb</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>ptop2</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>abc</value>
+					<required>false</required>
+					<group>31f92968-c9d1-43f6-a49b-21284fa41deb</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>31f92968-c9d1-43f6-a49b-21284fa41deb</id>
+					<name>PG1</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon>
+				<attachment>
+					<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+					<name>920x920.jpg</name>
+					<contentType>image/jpeg</contentType>
+				</attachment>
+			</icon>
+			<defaultImageAttach>
+				<attachment>
+					<id>75857e83-c6b6-49a3-897a-75e5d11e84a0</id>
+					<name>config (5).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultImageAttach>
+			<defaultConfigAttach>
+				<attachment>
+					<id>02b740e4-e48d-4e10-b33d-cac73fb69b13</id>
+					<name>config (3).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultConfigAttach>
+			<tags>
+				<tag>tag3</tag>
+			</tags>
+		</template>
+		<template>
+			<id>5ef59313-8148-437e-a7e5-aeceb07ad4bc</id>
+			<revisionId>5ef59313-8148-437e-a7e5-aeceb07ad4bc</revisionId>
+			<name>T Port</name>
+			<description></description>
+			<isTemplate>true</isTemplate>
+			<type>PORT</type>
+			<interfaceType>NONE</interfaceType>
+			<utilizationType>SHARED</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>prop1</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>123</value>
+					<required>false</required>
+					<group>088c545f-4b5a-4465-97af-25866ab85cac</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>prop2</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>abc</value>
+					<required>false</required>
+					<group>088c545f-4b5a-4465-97af-25866ab85cac</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>088c545f-4b5a-4465-97af-25866ab85cac</id>
+					<name>PG</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon/>
+			<defaultImageAttach/>
+			<defaultConfigAttach/>
+		</template>
+		<template>
+			<id>5c4c4e56-6da1-4998-bbef-58779674be6f</id>
+			<revisionId>5c4c4e56-6da1-4998-bbef-58779674be6f</revisionId>
+			<name>T3 (Copy)</name>
+			<description>Desc3</description>
+			<isTemplate>true</isTemplate>
+			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
+			<type>DEVICE</type>
+			<interfaceType>ORCHESTRATION</interfaceType>
+			<utilizationType>SHARED</utilizationType>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isCustomReservationTime>false</isCustomReservationTime>
+			<properties>
+				<property>
+					<name>ptop1</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>123</value>
+					<required>false</required>
+					<group>bb31c2ae-875f-4d7d-9cc4-9a05a1311615</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>ptop2</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<value>abc</value>
+					<required>false</required>
+					<group>bb31c2ae-875f-4d7d-9cc4-9a05a1311615</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+			</properties>
+			<propertyGroups>
+				<propertyGroup>
+					<id>bb31c2ae-875f-4d7d-9cc4-9a05a1311615</id>
+					<name>PG1</name>
+					<seqNo>1</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+			</propertyGroups>
+			<icon>
+				<attachment>
+					<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+					<name>920x920.jpg</name>
+					<contentType>image/jpeg</contentType>
+				</attachment>
+			</icon>
+			<defaultImageAttach>
+				<attachment>
+					<id>75857e83-c6b6-49a3-897a-75e5d11e84a0</id>
+					<name>config (5).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultImageAttach>
+			<defaultConfigAttach>
+				<attachment>
+					<id>02b740e4-e48d-4e10-b33d-cac73fb69b13</id>
+					<name>config (3).json</name>
+					<contentType>application/json</contentType>
+				</attachment>
+			</defaultConfigAttach>
+			<tags>
+				<tag>tag3</tag>
+			</tags>
+		</template>
+		<template>
+			<id>81854818-03ca-47c3-9da3-85a701906b54</id>
+			<revisionId>81854818-03ca-47c3-9da3-85a701906b54</revisionId>
+			<name>Test Equipment</name>
 			<description></description>
 			<isTemplate>true</isTemplate>
 			<parentTemplateId>2fdbef86-dbd7-43f7-ad46-1532d185f421</parentTemplateId>
@@ -21,7 +448,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
+					<group>71600f82-49c8-4b0e-a52e-267f16a4a061</group>
 					<seqNo>1</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -31,7 +458,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>cf240080-e515-40f9-bf70-0026e0fe783e</group>
+					<group>71786796-4256-48a7-8c0e-d396ce231b87</group>
 					<seqNo>1</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -41,7 +468,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
+					<group>71600f82-49c8-4b0e-a52e-267f16a4a061</group>
 					<seqNo>2</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -51,7 +478,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<group>5152830b-1754-43e9-90bf-1c9d8fe62983</group>
 					<seqNo>2</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -61,7 +488,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>PASSWORD_FIELD</widgetType>
 					<required>false</required>
-					<group>cf240080-e515-40f9-bf70-0026e0fe783e</group>
+					<group>71786796-4256-48a7-8c0e-d396ce231b87</group>
 					<seqNo>2</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -71,7 +498,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
+					<group>71600f82-49c8-4b0e-a52e-267f16a4a061</group>
 					<seqNo>3</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -81,7 +508,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<group>5152830b-1754-43e9-90bf-1c9d8fe62983</group>
 					<seqNo>3</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -91,7 +518,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<group>5152830b-1754-43e9-90bf-1c9d8fe62983</group>
 					<seqNo>5</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -101,7 +528,7 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<group>5152830b-1754-43e9-90bf-1c9d8fe62983</group>
 					<seqNo>6</seqNo>
 					<encrypted>false</encrypted>
 				</property>
@@ -111,26 +538,26 @@
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<group>5152830b-1754-43e9-90bf-1c9d8fe62983</group>
 					<seqNo>7</seqNo>
 					<encrypted>false</encrypted>
 				</property>
 			</properties>
 			<propertyGroups>
 				<propertyGroup>
-					<id>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</id>
+					<id>5152830b-1754-43e9-90bf-1c9d8fe62983</id>
 					<name>System Identification</name>
 					<seqNo>1</seqNo>
 					<isHidden>false</isHidden>
 				</propertyGroup>
 				<propertyGroup>
-					<id>711d04e9-cf36-4064-9f44-d74a0e56f72d</id>
+					<id>71600f82-49c8-4b0e-a52e-267f16a4a061</id>
 					<name>Location Information</name>
 					<seqNo>2</seqNo>
 					<isHidden>false</isHidden>
 				</propertyGroup>
 				<propertyGroup>
-					<id>cf240080-e515-40f9-bf70-0026e0fe783e</id>
+					<id>71786796-4256-48a7-8c0e-d396ce231b87</id>
 					<name>Credentials</name>
 					<seqNo>3</seqNo>
 					<isHidden>false</isHidden>
@@ -138,8 +565,8 @@
 			</propertyGroups>
 			<icon>
 				<attachment>
-					<id>4ce79f46-9751-40a8-aedd-2d84997774c9</id>
-					<name>pc.svg</name>
+					<id>fd2275c5-ca75-4a77-9fe2-594d849f64ca</id>
+					<name>test_equipment.svg</name>
 					<contentType>image/svg+xml</contentType>
 				</attachment>
 			</icon>
@@ -147,7 +574,206 @@
 			<defaultConfigAttach/>
 		</template>
 	</templates>
-	<orchestratedResources/>
-	<abstractResources/>
-	<topologies/>
+	<orchestratedResources>
+		<orchestratedResource>
+			<id>13b3152a-0b64-4692-a40a-f8de225d6acd</id>
+			<type>DEVICE</type>
+			<name>Orch1</name>
+			<description>Desc</description>
+			<condition>template[T1]</condition>
+			<role>S1_VELOCITY_SELECTED</role>
+			<referencedTemplateId>9018ad33-9a04-4ecb-82da-446f227f97c3</referencedTemplateId>
+			<visibility>PUBLIC</visibility>
+			<resourceGroup>
+				<name></name>
+			</resourceGroup>
+			<icon>
+				<attachment>
+					<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+					<name>920x920.jpg</name>
+					<contentType>image/jpeg</contentType>
+				</attachment>
+			</icon>
+			<nestedResources>
+				<orchestratedResource>
+					<id>7555694b-e37a-491c-a85a-9945430900ca</id>
+					<type>DEVICE</type>
+					<name>Orch2</name>
+					<description></description>
+					<role>S2_ORCHESTRATED</role>
+					<referencedTemplateId>7c7197dc-8cff-4267-b97e-62fda6d9330c</referencedTemplateId>
+					<visibility>PUBLIC</visibility>
+					<resourceGroup>
+						<name>RG1</name>
+					</resourceGroup>
+					<icon>
+						<attachment>
+							<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+							<name>920x920.jpg</name>
+							<contentType>image/jpeg</contentType>
+						</attachment>
+					</icon>
+					<nestedResources>
+						<orchestratedResource>
+							<id>4a45a8a6-447e-468b-bf31-3bcc06afb9ad</id>
+							<type>DEVICE</type>
+							<name>Orch3</name>
+							<description></description>
+							<role>S2_ORCHESTRATED</role>
+							<referencedTemplateId>6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</referencedTemplateId>
+							<visibility>PUBLIC</visibility>
+							<resourceGroup>
+								<name>RG1</name>
+							</resourceGroup>
+							<icon>
+								<attachment>
+									<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+									<name>920x920.jpg</name>
+									<contentType>image/jpeg</contentType>
+								</attachment>
+							</icon>
+							<nestedResources>
+								<orchestratedResource>
+									<id>57137ca9-8542-4894-b850-712288f977f5</id>
+									<type>PORT</type>
+									<name>P1</name>
+									<description></description>
+									<role>S2_ORCHESTRATED</role>
+									<visibility>PUBLIC</visibility>
+									<resourceGroup>
+										<name></name>
+									</resourceGroup>
+									<icon/>
+								</orchestratedResource>
+								<orchestratedResource>
+									<id>83599f12-951f-4116-b55c-39974cc03f28</id>
+									<type>PORT</type>
+									<name>P2</name>
+									<description></description>
+									<role>S2_ORCHESTRATED</role>
+									<visibility>PUBLIC</visibility>
+									<resourceGroup>
+										<name></name>
+									</resourceGroup>
+									<icon/>
+								</orchestratedResource>
+							</nestedResources>
+						</orchestratedResource>
+						<orchestratedResource>
+							<id>c42945c6-3d22-434e-8425-45667e7cc889</id>
+							<type>PORT</type>
+							<name>P1</name>
+							<description></description>
+							<role>S2_ORCHESTRATED</role>
+							<visibility>PUBLIC</visibility>
+							<resourceGroup>
+								<name></name>
+							</resourceGroup>
+							<icon/>
+						</orchestratedResource>
+						<orchestratedResource>
+							<id>df08c55c-e441-496e-bbea-e3fb4e77b3de</id>
+							<type>PORT</type>
+							<name>P2</name>
+							<description></description>
+							<role>S2_ORCHESTRATED</role>
+							<visibility>PUBLIC</visibility>
+							<resourceGroup>
+								<name></name>
+							</resourceGroup>
+							<icon/>
+						</orchestratedResource>
+					</nestedResources>
+				</orchestratedResource>
+				<orchestratedResource>
+					<id>d6469346-0ab5-4275-a2cc-67e1b1809229</id>
+					<type>PORT</type>
+					<name>P1</name>
+					<description></description>
+					<condition>template[T Port]</condition>
+					<role>S1_VELOCITY_SELECTED</role>
+					<referencedTemplateId>5ef59313-8148-437e-a7e5-aeceb07ad4bc</referencedTemplateId>
+					<visibility>PUBLIC</visibility>
+					<resourceGroup>
+						<name></name>
+					</resourceGroup>
+					<icon/>
+				</orchestratedResource>
+				<orchestratedResource>
+					<id>cb434043-d35c-47f2-8cd6-e389a428b839</id>
+					<type>PORT</type>
+					<name>P2</name>
+					<description></description>
+					<condition>template[T Port]</condition>
+					<role>S1_VELOCITY_SELECTED</role>
+					<referencedTemplateId>5ef59313-8148-437e-a7e5-aeceb07ad4bc</referencedTemplateId>
+					<visibility>PUBLIC</visibility>
+					<resourceGroup>
+						<name></name>
+					</resourceGroup>
+					<icon/>
+				</orchestratedResource>
+			</nestedResources>
+		</orchestratedResource>
+	</orchestratedResources>
+	<abstractResources>
+		<abstractResource>
+			<id>11f617ee-3743-419d-809e-7b0cca873d19</id>
+			<type>DEVICE</type>
+			<name>Abs1</name>
+			<description></description>
+			<condition>template[T1]</condition>
+			<reservationTime>IMMEDIATE</reservationTime>
+			<isPublic>true</isPublic>
+			<icon/>
+			<nestedResources>
+				<abstractResource>
+					<id>6822ee0c-5308-45c3-b687-a12f8f613b08</id>
+					<type>DEVICE</type>
+					<name>Abs2</name>
+					<description></description>
+					<condition>template[T2]</condition>
+					<reservationTime>IMMEDIATE</reservationTime>
+					<isPublic>true</isPublic>
+					<referencedTemplateId>7c7197dc-8cff-4267-b97e-62fda6d9330c</referencedTemplateId>
+					<icon>
+						<attachment>
+							<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+							<name>920x920.jpg</name>
+							<contentType>image/jpeg</contentType>
+						</attachment>
+					</icon>
+					<nestedResources>
+						<abstractResource>
+							<id>c5ff400f-5f04-4d55-af26-d6f2bf1ab28d</id>
+							<type>DEVICE</type>
+							<name>Abs3</name>
+							<description></description>
+							<condition>template[T3]</condition>
+							<reservationTime>IMMEDIATE</reservationTime>
+							<isPublic>true</isPublic>
+							<referencedTemplateId>6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</referencedTemplateId>
+							<icon>
+								<attachment>
+									<id>a793288c-2381-45ad-b954-aabc375782b7</id>
+									<name>920x920.jpg</name>
+									<contentType>image/jpeg</contentType>
+								</attachment>
+							</icon>
+						</abstractResource>
+					</nestedResources>
+				</abstractResource>
+			</nestedResources>
+		</abstractResource>
+	</abstractResources>
+	<topologies>
+		<topology>
+			<name>Export</name>
+			<attachment>
+				<id>281d90a5-81c2-4b7d-938f-d6089ac61a00</id>
+				<name>Export</name>
+				<contentType>application/xml</contentType>
+			</attachment>
+		</topology>
+	</topologies>
 </inventory>
