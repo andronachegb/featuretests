@@ -2,247 +2,152 @@
 <inventory format-version="1.0">
 	<templates>
 		<template>
-			<id>a5266606-f35b-482b-8c3f-a4317c1ccbb9</id>
-			<revisionId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</revisionId>
-			<name>Network Port</name>
+			<id>fea52e8b-8d75-455e-baa5-80751d9625c7</id>
+			<revisionId>fea52e8b-8d75-455e-baa5-80751d9625c7</revisionId>
+			<name>PC</name>
 			<description></description>
 			<isTemplate>true</isTemplate>
-			<type>PORT</type>
-			<interfaceType>NONE</interfaceType>
-			<utilizationType>EXCLUSIVE</utilizationType>
+			<parentTemplateId>2fdbef86-dbd7-43f7-ad46-1532d185f421</parentTemplateId>
+			<driverId>e660edc3-e5b6-4ecd-bcd9-5a152ffb94ec</driverId>
+			<type>DEVICE</type>
+			<interfaceType>MANAGEMENT</interfaceType>
+			<utilizationType>SHARED</utilizationType>
 			<reservationTime>IMMEDIATE</reservationTime>
 			<isCustomReservationTime>false</isCustomReservationTime>
 			<properties>
 				<property>
-					<name>portNumber</name>
-					<description>System port number. Example: 1.1.1</description>
+					<name>Facility</name>
+					<description>Example:  San Jose - Site 2</description>
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
-					<required>true</required>
-					<group>24fa142b-0c52-47d2-9764-34a42c8e35a0</group>
+					<required>false</required>
+					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
 					<seqNo>1</seqNo>
 					<encrypted>false</encrypted>
 				</property>
 				<property>
-					<name>Port Type</name>
-					<description>Example: Ethernet, Fast Ethernet, Copper..., etc</description>
+					<name>username</name>
+					<description></description>
 					<datatype>STRING</datatype>
 					<widgetType>TEXT_FIELD</widgetType>
-					<value>Ethernet</value>
 					<required>false</required>
-					<group>24fa142b-0c52-47d2-9764-34a42c8e35a0</group>
+					<group>cf240080-e515-40f9-bf70-0026e0fe783e</group>
+					<seqNo>1</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Room</name>
+					<description>Example:  Eng Lab 3</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
 					<seqNo>2</seqNo>
 					<encrypted>false</encrypted>
 				</property>
 				<property>
-					<name>Port Speed</name>
-					<description>Unit of Measure:  Mbps</description>
-					<datatype>INTEGER</datatype>
-					<widgetType>INTEGER_FIELD</widgetType>
-					<value>1000</value>
+					<name>ipAddress</name>
+					<description>System address -- IPv4 or IPv6</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
 					<required>false</required>
-					<group>24fa142b-0c52-47d2-9764-34a42c8e35a0</group>
-					<seqNo>4</seqNo>
+					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>password</name>
+					<description></description>
+					<datatype>STRING</datatype>
+					<widgetType>PASSWORD_FIELD</widgetType>
+					<required>false</required>
+					<group>cf240080-e515-40f9-bf70-0026e0fe783e</group>
+					<seqNo>2</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Floor Position</name>
+					<description>Example:  Rack 34-Chassis 3</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>711d04e9-cf36-4064-9f44-d74a0e56f72d</group>
+					<seqNo>3</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Hostname</name>
+					<description>Hostname</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<seqNo>3</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Make</name>
+					<description>Example:  Spirent</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<seqNo>5</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Model</name>
+					<description>Example:  Spirent Test Center, Avalanche, Landslide..., etc</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<seqNo>6</seqNo>
+					<encrypted>false</encrypted>
+				</property>
+				<property>
+					<name>Serial Number</name>
+					<description>Example:  3D543HIH12</description>
+					<datatype>STRING</datatype>
+					<widgetType>TEXT_FIELD</widgetType>
+					<required>false</required>
+					<group>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</group>
+					<seqNo>7</seqNo>
 					<encrypted>false</encrypted>
 				</property>
 			</properties>
 			<propertyGroups>
 				<propertyGroup>
-					<id>24fa142b-0c52-47d2-9764-34a42c8e35a0</id>
+					<id>ffb7f04c-783b-459d-aa4a-ba7b8dc2b242</id>
 					<name>System Identification</name>
 					<seqNo>1</seqNo>
 					<isHidden>false</isHidden>
 				</propertyGroup>
+				<propertyGroup>
+					<id>711d04e9-cf36-4064-9f44-d74a0e56f72d</id>
+					<name>Location Information</name>
+					<seqNo>2</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
+				<propertyGroup>
+					<id>cf240080-e515-40f9-bf70-0026e0fe783e</id>
+					<name>Credentials</name>
+					<seqNo>3</seqNo>
+					<isHidden>false</isHidden>
+				</propertyGroup>
 			</propertyGroups>
-			<icon/>
-			<defaultImageAttach/>
-			<defaultConfigAttach/>
-		</template>
-		<template>
-			<id>6de3f5fc-6218-4c77-89dc-9e484c0ff071</id>
-			<revisionId>6de3f5fc-6218-4c77-89dc-9e484c0ff071</revisionId>
-			<name>T1</name>
-			<description></description>
-			<isTemplate>true</isTemplate>
-			<driverId>511a04a2-f4ab-49d4-b313-e061017170c5</driverId>
-			<type>DEVICE</type>
-			<interfaceType>ORCHESTRATION</interfaceType>
-			<utilizationType>SHARED</utilizationType>
-			<reservationTime>IMMEDIATE</reservationTime>
-			<isCustomReservationTime>false</isCustomReservationTime>
-			<icon/>
-			<defaultImageAttach/>
-			<defaultConfigAttach/>
-			<nestedTemplates>
-				<nestedTemplate>
-					<id>111dd702-1732-4ccd-8b70-015a1f77fefc</id>
-				</nestedTemplate>
-			</nestedTemplates>
-		</template>
-		<template>
-			<id>111dd702-1732-4ccd-8b70-015a1f77fefc</id>
-			<revisionId>111dd702-1732-4ccd-8b70-015a1f77fefc</revisionId>
-			<name>T2</name>
-			<description></description>
-			<isTemplate>true</isTemplate>
-			<driverId>111a04a2-f4ab-49d4-b313-e061017170c5</driverId>
-			<l2SwitchId>236d4c69-91f9-451a-9869-323b425b230f</l2SwitchId>
-			<type>DEVICE</type>
-			<interfaceType>ORCHESTRATION</interfaceType>
-			<utilizationType>SHARED</utilizationType>
-			<reservationTime>IMMEDIATE</reservationTime>
-			<isCustomReservationTime>false</isCustomReservationTime>
-			<icon/>
+			<icon>
+				<attachment>
+					<id>4ce79f46-9751-40a8-aedd-2d84997774c9</id>
+					<name>pc.svg</name>
+					<contentType>image/svg+xml</contentType>
+				</attachment>
+			</icon>
 			<defaultImageAttach/>
 			<defaultConfigAttach/>
 		</template>
 	</templates>
-	<orchestratedResources>
-		<orchestratedResource>
-			<id>127e1def-660e-4cab-b0f6-0bcc00388ecc</id>
-			<type>DEVICE</type>
-			<name>OrchT1</name>
-			<description></description>
-			<condition>template[T1]</condition>
-			<role>S1_VELOCITY_SELECTED</role>
-			<referencedTemplateId>6de3f5fc-6218-4c77-89dc-9e484c0ff071</referencedTemplateId>
-			<visibility>PUBLIC</visibility>
-			<resourceGroup>
-				<name></name>
-			</resourceGroup>
-			<icon/>
-			<nestedResources>
-				<orchestratedResource>
-					<id>0106b49d-81ea-4a92-8a38-8c0dc4b62a07</id>
-					<type>DEVICE</type>
-					<name>OrchT2</name>
-					<description></description>
-					<role>S2_ORCHESTRATED</role>
-					<referencedTemplateId>111dd702-1732-4ccd-8b70-015a1f77fefc</referencedTemplateId>
-					<visibility>PUBLIC</visibility>
-					<resourceGroup>
-						<name>RG1</name>
-					</resourceGroup>
-					<icon/>
-					<nestedResources>
-						<orchestratedResource>
-							<id>525686d5-14e1-4071-a38e-201c169a615b</id>
-							<type>PORT</type>
-							<name>P1</name>
-							<description></description>
-							<role>S2_ORCHESTRATED</role>
-							<visibility>PUBLIC</visibility>
-							<resourceGroup>
-								<name></name>
-							</resourceGroup>
-							<icon/>
-						</orchestratedResource>
-						<orchestratedResource>
-							<id>d3315037-2a0b-42a6-8f30-be2b237f9e6e</id>
-							<type>PORT</type>
-							<name>P2</name>
-							<description></description>
-							<role>S2_ORCHESTRATED</role>
-							<visibility>PUBLIC</visibility>
-							<resourceGroup>
-								<name></name>
-							</resourceGroup>
-							<icon/>
-						</orchestratedResource>
-					</nestedResources>
-				</orchestratedResource>
-				<orchestratedResource>
-					<id>db1772c8-9a45-4075-8a4c-8316bf17a040</id>
-					<type>PORT</type>
-					<name>P1</name>
-					<description></description>
-					<condition>template[Network Port]</condition>
-					<role>S1_VELOCITY_SELECTED</role>
-					<referencedTemplateId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</referencedTemplateId>
-					<visibility>PUBLIC</visibility>
-					<resourceGroup>
-						<name></name>
-					</resourceGroup>
-					<icon/>
-				</orchestratedResource>
-				<orchestratedResource>
-					<id>61b3cf3f-64df-4f43-9906-5863c4a1082b</id>
-					<type>PORT</type>
-					<name>P2</name>
-					<description></description>
-					<condition>template[Network Port]</condition>
-					<role>S1_VELOCITY_SELECTED</role>
-					<referencedTemplateId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</referencedTemplateId>
-					<visibility>PUBLIC</visibility>
-					<resourceGroup>
-						<name></name>
-					</resourceGroup>
-					<icon/>
-				</orchestratedResource>
-			</nestedResources>
-		</orchestratedResource>
-	</orchestratedResources>
-	<abstractResources>
-		<abstractResource>
-			<id>a09f7e3a-5ed3-4fc6-99f5-7720ce1dcca1</id>
-			<type>DEVICE</type>
-			<name>AbsT1</name>
-			<description></description>
-			<condition>template[T1]</condition>
-			<reservationTime>IMMEDIATE</reservationTime>
-			<isPublic>true</isPublic>
-			<icon>
-				<attachment>
-					<id>d34e3e34-acf4-4e8c-b4e0-7c5af8fc1c78</id>
-					<name>ywjcvvykk0p11.png</name>
-					<contentType>image/png</contentType>
-				</attachment>
-			</icon>
-			<nestedResources>
-				<abstractResource>
-					<id>3facebdf-8c2a-4c7c-9c99-8884845bdeab</id>
-					<type>DEVICE</type>
-					<name>AbsT2</name>
-					<description></description>
-					<condition>template[T2]</condition>
-					<reservationTime>IMMEDIATE</reservationTime>
-					<isPublic>true</isPublic>
-					<referencedTemplateId>111dd702-1732-4ccd-8b70-015a1f77fefc</referencedTemplateId>
-					<icon/>
-				</abstractResource>
-				<abstractResource>
-					<id>5b35c32e-b19b-477d-a8c0-93d3193fa595</id>
-					<type>PORT</type>
-					<name>P1</name>
-					<description></description>
-					<condition>template[Network Port]</condition>
-					<reservationTime>IMMEDIATE</reservationTime>
-					<isPublic>true</isPublic>
-					<referencedTemplateId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</referencedTemplateId>
-					<icon/>
-				</abstractResource>
-				<abstractResource>
-					<id>d5a2e4b0-3989-4a1c-9871-64b81f9a1985</id>
-					<type>PORT</type>
-					<name>P2</name>
-					<description></description>
-					<condition>template[Network Port]</condition>
-					<reservationTime>IMMEDIATE</reservationTime>
-					<isPublic>true</isPublic>
-					<referencedTemplateId>a5266606-f35b-482b-8c3f-a4317c1ccbb9</referencedTemplateId>
-					<icon/>
-				</abstractResource>
-			</nestedResources>
-		</abstractResource>
-	</abstractResources>
-	<topologies>
-		<topology>
-			<name>Export 1</name>
-			<attachment>
-				<id>6e090a3e-9c5c-4814-8f26-c934e13978d4</id>
-				<name>Export 1</name>
-				<contentType>application/xml</contentType>
-			</attachment>
-		</topology>
-	</topologies>
+	<orchestratedResources/>
+	<abstractResources/>
+	<topologies/>
 </inventory>
