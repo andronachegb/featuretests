@@ -8,7 +8,7 @@
             <steps>
                 <item guid="af434d81-b115-4006-b38f-20acfc00a0e4" action="open" session="s1">
                     <command>
-                        <body>project://featuretests/session_profiles/REST.ffsp</body>
+                        <body>project://featuretests-second/session_profiles/REST.ffsp</body>
                     </command>
                     <applicationProperties type="com.fnfr.svt.documents.OpenStepPropertyGroup">
                         <stepProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
