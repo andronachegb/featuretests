@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>Export</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="i24eda086-f523-4b63-a30d-35f1e12cc3df" id="i24eda086-f523-4b63-a30d-35f1e12cc3df" shared="false" type="group">
+<property isimportant="false" name="name">Orch1 Group</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="isorchestrated">true</property>
+<property isimportant="false" name="collapsed"/>
+<boundary height="395" width="140" x="544" y="126"/>
+<resource guid="13b3152a-0b64-4692-a40a-f8de225d6acd" id="idc846f3b-943e-4663-9242-0b6eaeb4244a" shared="true" type="device">
+<property isimportant="false" name="name">Orch1</property>
+<property isimportant="false" name="description">Desc</property>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=13b3152a-0b64-4692-a40a-f8de225d6acd</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">a793288c-2381-45ad-b954-aabc375782b7</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="templateId">9018ad33-9a04-4ecb-82da-446f227f97c3</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T1]</extensions>
+<boundary height="100" width="100" x="20" y="35"/>
+<resource guid="d6469346-0ab5-4275-a2cc-67e1b1809229" id="i13b7e47f-0fa3-4215-9fd9-abb240d46a2e" type="port">
+<property isimportant="false" name="name">P1</property>
+<property isimportant="false" name="description">P1</property>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T Port]</extensions>
+</resource>
+<resource guid="cb434043-d35c-47f2-8cd6-e389a428b839" id="ib9e118a7-dfd5-4979-a70a-bb35eff0c0e9" type="port">
+<property isimportant="false" name="name">P2</property>
+<property isimportant="false" name="description">P2</property>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T Port]</extensions>
+</resource>
+</resource>
+<resource guid="7555694b-e37a-491c-a85a-9945430900ca" id="i98ef1831-6121-410e-98f4-a3c4c5b02332" shared="true" type="device">
+<property isimportant="false" name="name">Orch2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=7555694b-e37a-491c-a85a-9945430900ca</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">a793288c-2381-45ad-b954-aabc375782b7</property>
+<property isimportant="false" name="hostResource_topologyResourceId">idc846f3b-943e-4663-9242-0b6eaeb4244a</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="templateId">7c7197dc-8cff-4267-b97e-62fda6d9330c</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+<boundary height="100" width="100" x="20" y="155"/>
+<resource guid="c42945c6-3d22-434e-8425-45667e7cc889" id="i6b6a05d4-59ef-4048-836a-3982407c2904" type="port">
+<property isimportant="false" name="name">P1</property>
+<property isimportant="false" name="description">P1</property>
+<property isimportant="false" name="connectivity">connected</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+</resource>
+<resource guid="df08c55c-e441-496e-bbea-e3fb4e77b3de" id="i7bb3456b-aca7-4d3d-a37d-9a75bba71b58" type="port">
+<property isimportant="false" name="name">P2</property>
+<property isimportant="false" name="description">P2</property>
+<property isimportant="false" name="connectivity">connected</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+</resource>
+</resource>
+<resource guid="4a45a8a6-447e-468b-bf31-3bcc06afb9ad" id="ic54d7dd4-4334-4dfe-a948-badc47e9b432" shared="true" type="device">
+<property isimportant="false" name="name">Orch3</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=4a45a8a6-447e-468b-bf31-3bcc06afb9ad</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">a793288c-2381-45ad-b954-aabc375782b7</property>
+<property isimportant="false" name="hostResource_topologyResourceId">i98ef1831-6121-410e-98f4-a3c4c5b02332</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="templateId">6ac58bb7-b61b-45c0-a8fc-3f2483f557ae</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+<boundary height="100" width="100" x="20" y="275"/>
+<resource guid="57137ca9-8542-4894-b850-712288f977f5" id="i9878cc8a-d177-4790-839d-029b35157f51" type="port">
+<property isimportant="false" name="name">P1</property>
+<property isimportant="false" name="description">P1</property>
+<property isimportant="false" name="connectivity">connected</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+</resource>
+<resource guid="83599f12-951f-4116-b55c-39974cc03f28" id="i745b3003-7898-4473-ab4d-8b184c57c1ed" type="port">
+<property isimportant="false" name="name">P2</property>
+<property isimportant="false" name="description">P2</property>
+<property isimportant="false" name="connectivity">connected</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<property isimportant="false" name="orchestratedResourceRole">S2_ORCHESTRATED</property>
+</resource>
+</resource>
+</resource>
+<resource guid="if190907b-d068-4dd4-b853-3448d518d3b4" id="if190907b-d068-4dd4-b853-3448d518d3b4" shared="false" type="group">
+<property isimportant="false" name="name">Abs1 Group</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="collapsed"/>
+<boundary height="395" width="140" x="940.3333333333335" y="121.16666666666663"/>
+<resource guid="11f617ee-3743-419d-809e-7b0cca873d19" id="iabbcb9f1-eba9-470d-aaa5-6d9f05a0a366" shared="true" type="device">
+<property isimportant="false" name="name">Abs1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=11f617ee-3743-419d-809e-7b0cca873d19</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T1]</extensions>
+<boundary height="100" width="100" x="20" y="35.00000000000003"/>
+<property name="inventoryName"/>
+</resource>
+<resource guid="6822ee0c-5308-45c3-b687-a12f8f613b08" id="ia0227ee7-bd18-4899-94b1-e80365d98d26" shared="true" type="device">
+<property isimportant="false" name="name">Abs2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=6822ee0c-5308-45c3-b687-a12f8f613b08</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">a793288c-2381-45ad-b954-aabc375782b7</property>
+<property isimportant="false" name="hostResource_topologyResourceId">iabbcb9f1-eba9-470d-aaa5-6d9f05a0a366</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T2]</extensions>
+<boundary height="100" width="100" x="20" y="155"/>
+<property name="inventoryName"/>
+</resource>
+<resource guid="c5ff400f-5f04-4d55-af26-d6f2bf1ab28d" id="i497bc6f0-6fd8-4e43-94be-52000731bfd5" shared="true" type="device">
+<property isimportant="false" name="name">Abs3</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=c5ff400f-5f04-4d55-af26-d6f2bf1ab28d</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">a793288c-2381-45ad-b954-aabc375782b7</property>
+<property isimportant="false" name="hostResource_topologyResourceId">ia0227ee7-bd18-4899-94b1-e80365d98d26</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T3]</extensions>
+<boundary height="100" width="100" x="20" y="275"/>
+<property name="inventoryName"/>
+</resource>
+</resource>
+<resource guid="iffc679d0-d39e-46bd-9772-0593ae1fa547" id="iffc679d0-d39e-46bd-9772-0593ae1fa547" shared="false" type="vlan">
+<property isimportant="false" name="name">VLAN</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">platform:/plugin/com.fnfr.itest.topology.tbml.edit/icons/full/topology/Device_generic_32.gif</property>
+<propertyCollection name="ID" order="null">
+<property description="VLAN ID. Example: 302" editable="true" id="id" iscloudspecific="false" isimportant="true" name="ID" order="0" required="false" type="VLAN_ID"/>
+</propertyCollection>
+<boundary height="100" width="130" x="759" y="401"/>
+</resource>
+</resources>
+<connectivity>
+<link id="i055d2136-765a-4e30-a7f8-d21c652a46f4">
+<property isimportant="false" name="name">Link</property>
+<property isimportant="false" name="type">VLAN</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i9878cc8a-d177-4790-839d-029b35157f51"/>
+<endpoint direction="bidirectional" id="iffc679d0-d39e-46bd-9772-0593ae1fa547"/>
+<extensions type="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">060e27c3-8c9b-e653-a630-e16d328cbc56</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L2</property>
+<property isimportant="false" name="shortcut">VLAN</property>
+</propertyCollection>
+</link>
+<link id="i5450984f-8437-493d-a0d2-8d41c6c07f85">
+<property isimportant="false" name="name">Link 2</property>
+<property isimportant="false" name="type">VLAN</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i745b3003-7898-4473-ab4d-8b184c57c1ed"/>
+<endpoint direction="bidirectional" id="iffc679d0-d39e-46bd-9772-0593ae1fa547"/>
+<extensions type="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">060e27c3-8c9b-e653-a630-e16d328cbc56</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L2</property>
+<property isimportant="false" name="shortcut">VLAN</property>
+</propertyCollection>
+</link>
+<link id="ie1447b0c-a351-4faf-92de-dcafb126dcba">
+<property isimportant="false" name="name">Link 3</property>
+<property isimportant="false" name="type">VLAN</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i6b6a05d4-59ef-4048-836a-3982407c2904"/>
+<endpoint direction="bidirectional" id="iffc679d0-d39e-46bd-9772-0593ae1fa547"/>
+<extensions type="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">060e27c3-8c9b-e653-a630-e16d328cbc56</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L2</property>
+<property isimportant="false" name="shortcut">VLAN</property>
+</propertyCollection>
+</link>
+<link id="iae6fb8c0-9265-47c2-8da5-420ccfac9aba">
+<property isimportant="false" name="name">Link 4</property>
+<property isimportant="false" name="type">VLAN</property>
+<property isimportant="false" name="abstractResourceId"/>
+<property isimportant="false" name="abstractResourceName"/>
+<endpoint direction="bidirectional" id="i7bb3456b-aca7-4d3d-a37d-9a75bba71b58"/>
+<endpoint direction="bidirectional" id="iffc679d0-d39e-46bd-9772-0593ae1fa547"/>
+<extensions type="com.fnfr.rm.condition"/>
+<propertyCollection name="connectionType" order="0">
+<property isimportant="false" name="id">060e27c3-8c9b-e653-a630-e16d328cbc56</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="kind">L2</property>
+<property isimportant="false" name="shortcut">VLAN</property>
+</propertyCollection>
+</link>
+</connectivity>
+</body>
+</tbml>
