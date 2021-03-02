@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
 iTest-Manifest-Version: 1.0
-iTest-Dependent-Project: "featuretests-second"
+iTest-Dependent-Project: "testname-abc-second","testname-def-second","fe
+ aturetests-second"
 
