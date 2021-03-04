@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <testCase version="8.4.0.202012071239">
     <general>
+        <tags>tag1,tag2,tag3</tags>
         <language>Python</language>
     </general>
     <procedures>
