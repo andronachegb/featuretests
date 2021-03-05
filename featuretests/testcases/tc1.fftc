@@ -4,6 +4,9 @@
         <tags>tag1,tag2,tag3</tags>
         <language>Python</language>
     </general>
+    <requirements>
+        <requirement key="pool">driver</requirement>
+    </requirements>
     <procedures>
         <item name="main">
             <steps>
