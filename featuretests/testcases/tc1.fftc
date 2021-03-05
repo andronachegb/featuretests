@@ -58,6 +58,18 @@
                     </command>
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
                 </item>
+                <item guid="6cfcc70b-ffc0-46fc-b1ad-cd3034ac4328" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>import os</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="30d316b1-b24c-41c9-9609-e3f27b1169bb" action="eval" useFieldsInCommand="false">
+                    <command>
+                        <body>print(os.environ)</body>
+                    </command>
+                    <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
             </steps>
         </item>
     </procedures>
