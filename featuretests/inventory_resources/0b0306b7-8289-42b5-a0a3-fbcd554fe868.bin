@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>Export B</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="3d00fbf5-d71c-42dd-8fa5-492248d5595f" id="ic41b34ce-961c-497c-9574-cd136e0427bd" shared="true" type="device">
+<property isimportant="false" name="name">Abs Configurable</property>
+<property isimportant="false" name="description">Description</property>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=3d00fbf5-d71c-42dd-8fa5-492248d5595f</property>
+<property isimportant="false" name="reservationTime">DEFERRED</property>
+<property isimportant="false" name="ilo_iconId">0b5ff287-2495-4a49-9739-4db828f41925</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Template B]</extensions>
+<boundary height="100" width="100" x="469" y="109"/>
+<property name="inventoryName"/>
+</resource>
+<resource guid="9c6c4339-1eb6-44cf-a26a-5a521b7eb7bc" id="if092b47c-fe76-46b2-a26c-432a31c69d92" shared="true" type="device">
+<property isimportant="false" name="name">Template B</property>
+<property isimportant="false" name="description">Description</property>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=9c6c4339-1eb6-44cf-a26a-5a521b7eb7bc</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">4a19144c-9ef0-46f2-ab9f-3b703a2d053c</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Template B]</extensions>
+<boundary height="100" width="100" x="706" y="142"/>
+<property name="inventoryName"/>
+</resource>
+<resource guid="e109fdf0-466f-474a-99ea-19cec1c8ec74" id="i6a99c6f0-05bc-4c52-9eff-35c3eb391989" shared="true" type="device">
+<property isimportant="false" name="name">Orch Template b</property>
+<property isimportant="false" name="description">Description</property>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=e109fdf0-466f-474a-99ea-19cec1c8ec74</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">4a19144c-9ef0-46f2-ab9f-3b703a2d053c</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<property isimportant="false" name="templateId">9c6c4339-1eb6-44cf-a26a-5a521b7eb7bc</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Template B]</extensions>
+<boundary height="100" width="100" x="967" y="118"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>

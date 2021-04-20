@@ -1,0 +1,64 @@
+2021-04-12T05:17:11,961Z Starting restarter loop at: Mon Apr 12 08:17:11 2021
+2021-04-12T05:17:11,961Z Starting: /usr/bin/filebeat.sh -c /etc/filebeat/filebeat.yml -e -modules=nginx -setup
+2021-04-12T05:17:11,964Z Child PID: 1802
+2021/04/12 05:17:13.093290 beat.go:285: INFO Home path: [/usr/share/filebeat] Config path: [/etc/filebeat] Data path: [/var/lib/filebeat] Logs path: [/var/log/filebeat]
+2021/04/12 05:17:13.093416 beat.go:186: INFO Setup Beat: filebeat; Version: 5.5.2
+2021/04/12 05:17:13.093560 metrics.go:23: INFO Metrics logging every 30s
+2021/04/12 05:17:13.128859 output.go:258: INFO Loading template enabled. Reading template file: /etc/filebeat/filebeat.template.json
+2021/04/12 05:17:13.130376 output.go:269: INFO Loading template enabled for Elasticsearch 2.x. Reading template file: /etc/filebeat/filebeat.template-es2x.json
+2021/04/12 05:17:13.132370 output.go:281: INFO Loading template enabled for Elasticsearch 6.x. Reading template file: /etc/filebeat/filebeat.template-es6x.json
+2021/04/12 05:17:13.165154 client.go:128: INFO Elasticsearch url: https://vds-alin85.spirenteng.com:9200
+2021/04/12 05:17:13.165262 outputs.go:108: INFO Activated elasticsearch as output plugin.
+2021/04/12 05:17:13.166847 publish.go:295: INFO Publisher name: vel-alin85.spirenteng.com
+2021/04/12 05:17:13.167159 async.go:63: INFO Flush Interval set to: 1s
+2021/04/12 05:17:13.167177 async.go:64: INFO Max Bulk Size set to: 50
+2021/04/12 05:17:13.296199 client.go:128: INFO Elasticsearch url: https://vds-alin85.spirenteng.com:9200
+2021/04/12 05:17:13.296604 tls.go:200: WARN SSL/TLS verifications disabled.
+2021/04/12 05:17:13.404897 client.go:662: INFO Connected to Elasticsearch version 5.5.2
+2021/04/12 05:17:16.584838 beat.go:324: INFO Kibana dashboards successfully loaded.
+2021/04/12 05:17:16.584914 beat.go:221: INFO filebeat start running.
+2021/04/12 05:17:16.608124 client.go:128: INFO Elasticsearch url: https://vds-alin85.spirenteng.com:9200
+2021/04/12 05:17:16.608611 tls.go:200: WARN SSL/TLS verifications disabled.
+2021/04/12 05:17:16.627914 client.go:662: INFO Connected to Elasticsearch version 5.5.2
+2021/04/12 05:17:16.720027 registrar.go:68: INFO No registry file found under: /var/lib/filebeat/registry. Creating a new registry file.
+2021/04/12 05:17:16.720455 registrar.go:106: INFO Loading registrar data from /var/lib/filebeat/registry
+2021/04/12 05:17:16.720603 registrar.go:123: INFO States Loaded from registrar: 0
+2021/04/12 05:17:16.720641 crawler.go:38: INFO Loading Prospectors: 2
+2021/04/12 05:17:16.720936 prospector_log.go:65: INFO Prospector with previous states loaded: 0
+2021/04/12 05:17:16.721153 prospector.go:124: INFO Starting prospector of type: log; id: 11911631127868342889 
+2021/04/12 05:17:16.721271 prospector_log.go:65: INFO Prospector with previous states loaded: 0
+2021/04/12 05:17:16.721359 prospector.go:124: INFO Starting prospector of type: log; id: 8923329985304599660 
+2021/04/12 05:17:16.721380 crawler.go:58: INFO Loading and starting Prospectors completed. Enabled prospectors: 2
+2021/04/12 05:17:16.721412 registrar.go:236: INFO Starting Registrar
+2021/04/12 05:17:16.727360 sync.go:41: INFO Start sending events to output
+2021/04/12 05:17:16.727421 spooler.go:63: INFO Starting spooler: spool_size: 2048; idle_timeout: 5s
+2021/04/12 05:17:16.727882 log.go:91: INFO Harvester started for file: /data/logs/nginx-access.log
+2021/04/12 05:17:16.728509 log.go:91: INFO Harvester started for file: /var/log/nginx/error.log
+2021/04/12 05:17:21.728838 tls.go:200: WARN SSL/TLS verifications disabled.
+2021/04/12 05:17:21.757309 client.go:662: INFO Connected to Elasticsearch version 5.5.2
+2021/04/12 05:17:21.757749 output.go:317: INFO Trying to load template for client: https://vds-alin85.spirenteng.com:9200
+2021/04/12 05:17:21.771169 output.go:324: INFO Existing template will be overwritten, as overwrite is enabled.
+2021/04/12 05:17:21.812334 client.go:592: INFO Elasticsearch template with name 'filebeat' loaded
+2021/04/12 05:17:43.111794 metrics.go:39: INFO Non-zero metrics in the last 30s: filebeat.harvester.open_files=2 filebeat.harvester.running=2 filebeat.harvester.started=2 libbeat.es.call_count.PublishEvents=3 libbeat.es.publish.read_bytes=41475 libbeat.es.publish.read_errors=5 libbeat.es.publish.write_bytes=145855 libbeat.es.published_and_acked_events=31 libbeat.publisher.published_events=31 publish.events=33 registrar.states.current=2 registrar.states.update=33 registrar.writes=4
+2021/04/12 05:18:13.097021 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2554 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=8806 libbeat.es.published_and_acked_events=11 libbeat.publisher.published_events=11 publish.events=11 registrar.states.update=11 registrar.writes=5
+2021/04/12 05:18:43.130727 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2550 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=8817 libbeat.es.published_and_acked_events=11 libbeat.publisher.published_events=11 publish.events=11 registrar.states.update=11 registrar.writes=5
+2021/04/12 05:19:13.094042 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2571 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=13173 libbeat.es.published_and_acked_events=17 libbeat.publisher.published_events=17 publish.events=17 registrar.states.update=17 registrar.writes=5
+2021/04/12 05:19:43.120291 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=2 libbeat.es.publish.read_bytes=1046 libbeat.es.publish.read_errors=2 libbeat.es.publish.write_bytes=7595 libbeat.es.published_and_acked_events=10 libbeat.publisher.published_events=10 publish.events=10 registrar.states.update=10 registrar.writes=2
+2021/04/12 05:20:13.096028 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=4 libbeat.es.publish.read_bytes=2075 libbeat.es.publish.read_errors=2 libbeat.es.publish.write_bytes=12298 libbeat.es.published_and_acked_events=16 libbeat.publisher.published_events=16 publish.events=16 registrar.states.update=16 registrar.writes=4
+2021/04/12 05:20:43.101128 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=3 libbeat.es.publish.read_bytes=1571 libbeat.es.publish.read_errors=2 libbeat.es.publish.write_bytes=13575 libbeat.es.published_and_acked_events=18 libbeat.publisher.published_events=18 publish.events=18 registrar.states.update=18 registrar.writes=3
+2021/04/12 05:21:13.093914 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=4 libbeat.es.publish.read_bytes=2218 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=32146 libbeat.es.published_and_acked_events=54 libbeat.publisher.published_events=54 publish.events=54 registrar.states.update=54 registrar.writes=4
+2021/04/12 05:21:43.104482 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2672 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=27451 libbeat.es.published_and_acked_events=42 libbeat.publisher.published_events=42 publish.events=42 registrar.states.update=42 registrar.writes=5
+2021/04/12 05:22:13.093898 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2720 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=42987 libbeat.es.published_and_acked_events=55 libbeat.publisher.published_events=55 publish.events=55 registrar.states.update=55 registrar.writes=5
+2021/04/12 05:22:21.896814 log.go:116: INFO File is inactive: /var/log/nginx/error.log. Closing because close_inactive of 5m0s reached.
+2021/04/12 05:22:36.983810 client.go:255: ERR Failed to perform any bulk index operations: Post https://vds-alin85.spirenteng.com:9200/_bulk: EOF
+2021/04/12 05:22:36.983889 single.go:91: INFO Error publishing events (retrying): Post https://vds-alin85.spirenteng.com:9200/_bulk: EOF
+2021/04/12 05:22:38.038915 client.go:662: INFO Connected to Elasticsearch version 5.5.2
+2021/04/12 05:22:38.039023 output.go:317: INFO Trying to load template for client: https://vds-alin85.spirenteng.com:9200
+2021/04/12 05:22:38.076208 output.go:324: INFO Existing template will be overwritten, as overwrite is enabled.
+2021/04/12 05:22:38.112649 client.go:592: INFO Elasticsearch template with name 'filebeat' loaded
+2021/04/12 05:22:43.104478 metrics.go:39: INFO Non-zero metrics in the last 30s: filebeat.harvester.closed=1 filebeat.harvester.open_files=-1 filebeat.harvester.running=-1 libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=3262 libbeat.es.publish.read_errors=2 libbeat.es.publish.write_bytes=34803 libbeat.es.published_and_acked_events=36 libbeat.publisher.published_events=36 publish.events=37 registrar.states.update=37 registrar.writes=5
+2021/04/12 05:23:13.094002 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=3 libbeat.es.publish.read_bytes=1588 libbeat.es.publish.read_errors=2 libbeat.es.publish.write_bytes=16485 libbeat.es.published_and_acked_events=22 libbeat.publisher.published_events=22 publish.events=22 registrar.states.update=22 registrar.writes=3
+2021/04/12 05:23:43.094023 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2610 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=23601 libbeat.es.published_and_acked_events=25 libbeat.publisher.published_events=25 publish.events=25 registrar.states.update=25 registrar.writes=5
+2021/04/12 05:24:13.093975 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=5 libbeat.es.publish.read_bytes=2684 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=32935 libbeat.es.published_and_acked_events=45 libbeat.publisher.published_events=45 publish.events=45 registrar.states.update=45 registrar.writes=5
+2021/04/12 05:24:43.094087 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=1 libbeat.es.publish.read_bytes=525 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=5389 libbeat.es.published_and_acked_events=6 libbeat.publisher.published_events=6 publish.events=6 registrar.states.update=6 registrar.writes=1
+2021/04/12 05:25:13.238464 metrics.go:39: INFO Non-zero metrics in the last 30s: libbeat.es.call_count.PublishEvents=3 libbeat.es.publish.read_bytes=1554 libbeat.es.publish.read_errors=1 libbeat.es.publish.write_bytes=11170 libbeat.es.published_and_acked_events=16 libbeat.publisher.published_events=16 publish.events=16 registrar.states.update=16 registrar.writes=3
