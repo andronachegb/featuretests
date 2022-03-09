@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<ParameterTree version="8.4.0.202012071239">
-    <parameters escape="true">
-        <parameters xmlns:pt="http://www.fnfr.com/schemas/parameterTree">
-            <projName>featuretests-second</projName>
-        </parameters>
-    </parameters>
-</ParameterTree>
